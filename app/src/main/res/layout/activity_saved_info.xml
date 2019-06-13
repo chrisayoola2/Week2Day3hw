@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SavedInfoActivity">
+    <TextView
+        android:id="@+id/tvFirstDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLastDisplay"
+        app:layout_constraintTop_toBottomOf="@id/tvFirstDisplay"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAddressDisplay"
+        app:layout_constraintTop_toBottomOf="@id/tvLastDisplay"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCityDisplay"
+        app:layout_constraintTop_toBottomOf="@id/tvAddressDisplay"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvStateDisplay"
+        app:layout_constraintTop_toBottomOf="@id/tvCityDisplay"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvZipDisplay"
+        app:layout_constraintTop_toBottomOf="@id/tvStateDisplay"
+        android:textSize="30sp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
